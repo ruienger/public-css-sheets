@@ -1,0 +1,60 @@
+/* 创建时间 2020/12/08
+作者 hzk
+
+该样式表用来编辑一些常用的图标样式
+
+命名规则 大小-形状-位置 */
+
+/* 正方形小方块 -- 垂直(水平)居中 */
+.tiny-rect-center {
+  height: 14px;
+  width: 14px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+}
+/* 正方形中方块 -- 垂直(水平)居中 */
+.middle-rect-center {
+  height: 24px;
+  width: 24px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+}
+/* 正方形大方块 -- 垂直(水平)居中 */
+.huge-rect-center {
+  height: 44px;
+  width: 44px;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+}
+/* 圆形小光环 -- 垂直(水平)居中 */
+.tiny-halo-center {
+  height: 64px;
+  width: 64px;
+  border-radius: 32px;
+  border: 2px solid #6397d6;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 15px #6397d6;
+  background-image: radial-gradient(#0c3260, #0c326022);
+}
+.tiny-halo-center:hover {
+  box-shadow: 0 0 25px #82b7f8;
+}

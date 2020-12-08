@@ -1,0 +1,62 @@
+/* 创建时间 2020/12/08
+作者 hzk
+
+该样式表用来编辑一些常用的布局样式
+
+命名规则 布局方式-对齐方式-详细备注 */
+
+/* 经典上下布局,上头部,中内容,下页尾 */
+.classic-tri-parts{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.classic-tri-parts > div:first-child {
+  flex-basis: 180rpx;
+}
+.classic-tri-parts > div:nth-child(2){
+  flex: 1;
+}
+.classic-tri-parts > div:last-child{
+  flex-basis: 600rpx;
+}
+/* flex的垂直水平居中布局 */
+.flex-duocenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* flex的垂直水平居中(竖向)布局 */
+.flex-duocenter-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* flex的水平方向内容铺开 */
+.flex-between-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* flex的水平方向内容铺开(带换行) */
+.flex-between-row-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/* flex的水平方向内容铺开(垂直方向居中) */
+.flex-between-row-vcenter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* flex的水平方向内容铺开(垂直方向居中并带换行) */
+.flex-between-row-vcenter-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
